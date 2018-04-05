@@ -212,6 +212,7 @@ void GenerateFreeMoveTrajectoryPoints(
 }
 
 double AdjustSpeedByCurvature(const double speed, const double curvature) {
+  // TODO(kechxu) move some values to gflags
   if (std::abs(curvature) < 0.02) {
     return speed;
   }
